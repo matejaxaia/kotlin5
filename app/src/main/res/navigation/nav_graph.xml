@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inputFragment">
+
+    <fragment
+        android:id="@+id/inputFragment"
+        android:name="com.example.myapplication.fragments.InputFragment"
+        tools:layout="@layout/fragment_input"
+        android:label="InputFragment" >
+        <action
+            android:id="@+id/action_inputFragment_to_printFragment"
+            app:destination="@id/printFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/printFragment"
+        tools:layout="@layout/fragment_print"
+        android:name="com.example.myapplication.fragments.PrintFragment"
+        android:label="PrintFragment" >
+
+        <argument android:name="weli"
+            app:argType="integer"
+            android:defaultValue="-1"/>
+        <argument android:name="tve"
+            app:argType="integer"
+            android:defaultValue="-1"/>
+        <argument android:name="ricxvi"
+            app:argType="integer"
+            android:defaultValue="-1"/>
+
+    </fragment>
+
+</navigation>

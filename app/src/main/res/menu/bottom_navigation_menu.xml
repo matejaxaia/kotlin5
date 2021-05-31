@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/inputFragment"
+        android:icon="@drawable/ic_baseline_short_text"
+        android:title="Input"/>
+
+    <item android:id="@+id/printFragment"
+        android:icon="@drawable/ic_baseline_print"
+        android:title="Result"/>
+</menu>
